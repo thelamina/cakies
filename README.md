@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project Description
+
+<ol>
+
+<li>Implement the slide in and slide out function of the right side bar found in the design on the design link.</li>
+
+<li>Implement the add, and remove to and from cart functions respectively found in the design on the link.</li>
+
+<li>Host on any platform and share both deployment links and github repositories.</li>
+
+</ol>
+
 ## Available Scripts
 
 In the project directory, you can run:
