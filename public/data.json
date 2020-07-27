@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Vanilla flavour ginger cake",
     "price": 22000,
-    "photo": "/assets/images/pp.png",
+    "photo": "/assets/images/cake1.png",
     "category": "Category",
     "rating": 4
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Vanilla flavour ginger cake",
     "price": 22000,
-    "photo": "/assets/images/pp.png",
+    "photo": "/assets/images/cake2.png",
     "category": "Category",
     "rating": 4
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "name": "Vanilla flavour ginger cake",
     "price": 22000,
-    "photo": "/assets/images/pp.png",
+    "photo": "/assets/images/cake3.png",
     "category": "Category",
     "rating": 4
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "name": "Vanilla flavour ginger cake",
     "price": 22000,
-    "photo": "/assets/images/pp.png",
+    "photo": "/assets/images/cake2.png",
     "category": "Category",
     "rating": 4
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "name": "Vanilla flavour ginger cake",
     "price": 22000,
-    "photo": "/assets/images/pp.png",
+    "photo": "/assets/images/cake1.png",
     "category": "Category",
     "rating": 4
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "name": "Vanilla flavour ginger cake",
     "price": 22000,
-    "photo": "/assets/images/pp.png",
+    "photo": "/assets/images/cake2.png",
     "category": "Category",
     "rating": 4
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "name": "Vanilla flavour ginger cake",
     "price": 22000,
-    "photo": "/assets/images/pp.png",
+    "photo": "/assets/images/cake3.png",
     "category": "Category",
     "rating": 4
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "name": "Vanilla flavour ginger cake",
     "price": 22000,
-    "photo": "/assets/images/pp.png",
+    "photo": "/assets/images/cake2.png",
     "category": "Category",
     "rating": 4
   }

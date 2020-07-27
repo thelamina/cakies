@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Home.css";
 import ProductItem from "./ProductItem";
+import { Link } from "@material-ui/core";
 
 const Home = () => {
   const [products, setproducts] = useState([]);
@@ -20,9 +21,9 @@ const Home = () => {
           <div className='Landing-Content'>
             <h1>Bam-Bam Lala Special Offer</h1>
             <p>Get bambam for your loved ones this season</p>
-            <a href='#' className='btn btn-primary'>
+            <Link to='/' className='btn btn-primary'>
               Shop!
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -33,7 +34,7 @@ const Home = () => {
         </div>
         <div className='row row-cols-1 row-cols-sm-1 row-cols-md-4'>
           {products.map((product) => (
-            <ProductItem product={product} key={product.id}/>
+            <ProductItem product={product} key={product.id} />
           ))}
         </div>
       </div>

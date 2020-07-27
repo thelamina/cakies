@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../contexts/CartContext";
-import { Link } from "react-router-dom";
+
+import { formatCurrency } from "../../utils/FormatCurrency";
 
 const ProductItem = ({ product }) => {
   const { cartItems, addProduct } = useContext(CartContext);
@@ -27,7 +28,7 @@ const ProductItem = ({ product }) => {
       <a href='/category' className='Creamy-Item-Category'>
         {product.category}
       </a>
-      <p className='Creamy-Item-Price'>{`N ${product.price}`}</p>
+      <p className='Creamy-Item-Price'>{formatCurrency(product.price)}</p>
     </div>
   );
 };

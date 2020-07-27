@@ -1,5 +1,5 @@
 import React from "react";
-import clsx from 'clsx'
+import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 
@@ -21,9 +21,9 @@ const useStyles = makeStyles((theme) => ({
     flexShrink: 0,
   },
   drawerPaper: {
-    'max-width': drawerWidth,
+    "max-width": drawerWidth,
     background: "#F24472",
-    border:'none'
+    border: "none",
   },
   drawerHeader: {
     display: "flex",
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PersistentDrawerRight(props) {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
 
   const handleDrawerOpen = () => {
     setOpen(!open);
@@ -67,12 +67,14 @@ export default function PersistentDrawerRight(props) {
           height: "30px",
           width: "30px",
           background: "#F24472",
-          border:'none',
+          border: "none",
           position: "fixed",
           top: "10vh",
           right: "0vw",
         }}
-      ></button>
+      >
+        <img src='assets/icons/arrow.svg' alt='' style={{transform: 'rotate(180deg)'}}/>
+      </button>
       <Drawer
         className={classes.drawer}
         variant='persistent'
@@ -89,11 +91,13 @@ export default function PersistentDrawerRight(props) {
             width: "30px",
             background: "#F24472",
             position: "fixed",
-            border:'none',
+            border: "none",
             top: "10vh",
             right: drawerWidth,
           }}
-        ></button>
+        >
+          <img src='assets/icons/arrow.svg' alt='' />
+        </button>
         <main
           className={clsx(classes.content, {
             [classes.contentShift]: open,

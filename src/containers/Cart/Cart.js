@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import "./Cart.css";
-import CartItem from "./CartItem";
+import CartItem from "./CartItem/CartItem";
 import { CartContext } from "../../contexts/CartContext";
-
+import { formatCurrency } from "../../utils/FormatCurrency";
 const Cart = () => {
   const {
     total,
@@ -29,13 +29,12 @@ const Cart = () => {
             cartItems.map((product) => (
               <CartItem key={product.id} product={product} />
             ))
-            ) : (
-              <div className='p-3 text-center text-muted'>
+          ) : (
+            <div className='p-3 text-center text-white'>
               No items added yet.
             </div>
           )}
-          <p>Total: {total}</p>
-
+          <p>Total: {formatCurrency(total)}</p>
         </div>
       </div>
     </div>
