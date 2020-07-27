@@ -1,0 +1,41 @@
+.navlogo {
+  background: #fff;
+  padding: 20px;
+  height: 110px;
+  height: 110px;
+  margin-top: -50px;
+  border-radius: 50%;
+  width: 110px;
+  box-shadow: -3px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 70%;
+  left: -20px;
+}
+
+.navlogo img {
+  object-fit: contain;
+  object-position: center center;
+  width: 100%;
+  /* padding: 40px; */
+  /* height: 40px; */
+}
+nav {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-nav {
+  position: relative;
+  padding: 10px 0;
+  padding-left: 10%;
+  width: 80%;
+  justify-content: space-between;
+
+  /* background-color: #fff; */
+  /* margin-left: 5%; */
+}
+
+.nav-link {
+  color: #000;
+  letter-spacing: 0.05em;
+  font-family: "Caviar-Dreams";
+}

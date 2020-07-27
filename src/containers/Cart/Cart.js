@@ -4,14 +4,7 @@ import CartItem from "./CartItem/CartItem";
 import { CartContext } from "../../contexts/CartContext";
 import { formatCurrency } from "../../utils/FormatCurrency";
 const Cart = () => {
-  const {
-    total,
-    cartItems,
-    itemCount,
-    clearCart,
-    checkout,
-    handleCheckout,
-  } = useContext(CartContext);
+  const { total, cartItems } = useContext(CartContext);
   return (
     <div>
       <div className='Cart'>
@@ -26,15 +19,55 @@ const Cart = () => {
         <div className='Cart-Basket container'>
           <p className='text-white'>Basket Items</p>
           {cartItems.length > 0 ? (
-            cartItems.map((product) => (
-              <CartItem key={product.id} product={product} />
-            ))
+            <div>
+              {cartItems.map((product) => (
+                <CartItem key={product.id} product={product} />
+              ))}
+              <hr />
+              <form>
+                <div className='form-group'>
+                  <label htmlFor='address' className='text-white'>
+                    Address
+                  </label>
+                  <input
+                    type='text'
+                    className='form-control rounded-0'
+                    id='address'
+                    placeholder='Delivery Address'
+                  />
+                </div>
+                <div className='form-group'>
+                  <label htmlFor='city' className='text-white'>
+                    City
+                  </label>
+                  <input
+                    type='text'
+                    className='form-control rounded-0'
+                    id='city'
+                    placeholder='No City Selected'
+                  />
+                </div>
+                <div className='form-group'>
+                  <label htmlFor='phone' className='text-white'>
+                    Phone Number
+                  </label>
+                  <input
+                    type='tel'
+                    id='phone'
+                    placeholder=''
+                    className='form-control rounded-0'
+                  />
+                </div>
+                <button className='d-block w-100 btn btn-white font-weight-bold display-2'>
+                  Pay {formatCurrency(total)}
+                </button>
+              </form>
+            </div>
           ) : (
             <div className='p-3 text-center text-white'>
               No items added yet.
             </div>
           )}
-          <p>Total: {formatCurrency(total)}</p>
         </div>
       </div>
     </div>

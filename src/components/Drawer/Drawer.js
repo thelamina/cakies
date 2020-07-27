@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PersistentDrawerRight(props) {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(!open);
@@ -69,7 +69,7 @@ export default function PersistentDrawerRight(props) {
           background: "#F24472",
           border: "none",
           position: "fixed",
-          top: "10vh",
+          top: "12vh",
           right: "0vw",
         }}
       >

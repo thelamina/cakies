@@ -1,0 +1,9 @@
+.Footer ul {
+  list-style: none;
+}
+
+.Footer ul a {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 10px;
+}

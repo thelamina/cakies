@@ -1,0 +1,42 @@
+.CartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.CartItem button {
+  border: none;
+  background: transparent;
+  color: #f24472;
+  font-weight: bold;
+}
+
+.CartItem p {
+  padding: 0;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.CartItem-Collapse {
+  padding: 10px;
+}
+
+.CartItem-Collapse select option{
+width: 100%;
+  
+  /* align-items: center;
+  justify-content: space-between; */
+}
+
+.CartItem-Collapse input,
+.CartItem-Collapse select {
+  display: inline-block;
+  outline: none;
+  padding: 5px 0;
+  border: none;
+  margin-bottom: 20px;
+  text-align: right;
+  background: transparent;
+  color: #f24472;
+}

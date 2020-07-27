@@ -19,7 +19,7 @@ const Home = () => {
             <img src='assets/images/pp.png' alt='' />
           </div>
           <div className='Landing-Content'>
-            <h1>Bam-Bam Lala Special Offer</h1>
+            <h1 className='title'>Bam-Bam Lala Special Offer</h1>
             <p>Get bambam for your loved ones this season</p>
             <Link to='/' className='btn btn-primary'>
               Shop!
@@ -32,7 +32,7 @@ const Home = () => {
           <h2 className='text-primary'>Creamy Cakes</h2>
           <img src='assets/images/line.svg' alt='' />
         </div>
-        <div className='row row-cols-1 row-cols-sm-1 row-cols-md-4'>
+        <div className='row row-cols-1 row-cols-sm-1 row-cols-md-4 center'>
           {products.map((product) => (
             <ProductItem product={product} key={product.id} />
           ))}

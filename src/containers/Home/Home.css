@@ -2,7 +2,6 @@
 .Home {
   background: #f244721c url("/assets/images/bg.svg") no-repeat center center /
     cover;
-  /* height: 100vh; */
   padding: 10px;
   padding-top: 100px;
 }
@@ -11,8 +10,6 @@
   margin-bottom: 50px;
   width: auto;
   height: auto;
-  /* position: relative; */
-  /* margin-bottom: 30px; */
   background-color: #fff;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
 }
@@ -23,7 +20,6 @@
   margin-left: 12px;
   margin-top: 12px;
   object-fit: contain;
-  /* position: absolute; */
 }
 .Creamy .Creamy-Item-Image {
   width: 243px;
@@ -36,14 +32,12 @@
   margin-bottom: 50px;
 }
 .Creamy .Creamy-Item-Image img {
-  /* width: 100%; */
   width: 243px;
   height: 213px;
   object-fit: cover;
   object-position: center center;
   position: absolute;
   transition: 0.2s;
-  /* text-align: center; */
 }
 .Creamy .Creamy-Item-Image .btn {
   position: absolute;
@@ -68,7 +62,6 @@
 
 .Creamy-Item-Name {
   font-weight: bold;
-  /* font-size: 14px; */
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 4px;
