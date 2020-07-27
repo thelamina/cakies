@@ -140,9 +140,12 @@ const Home = () => {
       </div>
       <div>
         <div className='container  py-5'>
-          <div className='title text-center'>
+          <div className='title text-center my-3'>
             <h2 className='text-primary'>Contact us</h2>
             <img src='assets/images/line.svg' alt='' />
+            <div className='Contact-Map mt-5'>
+              <img src='assets/images/contact.png' alt='' width='100%' />
+            </div>
           </div>
         </div>
       </div>

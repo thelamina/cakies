@@ -4,7 +4,7 @@ import CartItem from "./CartItem/CartItem";
 import { CartContext } from "../../contexts/CartContext";
 import { formatCurrency } from "../../utils/FormatCurrency";
 const Cart = () => {
-  const { total, cartItems } = useContext(CartContext);
+  const { total, cartItems, clearCart } = useContext(CartContext);
   return (
     <div>
       <div className='Cart'>
@@ -58,7 +58,14 @@ const Cart = () => {
                     className='form-control rounded-0'
                   />
                 </div>
-                <button className='d-block w-100 btn btn-white font-weight-bold display-2'>
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    alert("Thanks for your patronage");
+                    clearCart();
+                  }}
+                  className='d-block w-100 btn btn-white font-weight-bold display-2'
+                >
                   Pay {formatCurrency(total)}
                 </button>
               </form>
