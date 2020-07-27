@@ -63,7 +63,7 @@ const Home = () => {
             <div className='Special-Item m-2 text-center'>
               <img
                 className='rounded-circle'
-                src='assets/images/sp.png'
+                src='assets/images/sp2.png'
                 alt=''
                 width='120px'
                 height='120px'
@@ -93,7 +93,7 @@ const Home = () => {
             <div className='Special-Item m-2 text-center'>
               <img
                 className='rounded-circle'
-                src='assets/images/sp.png'
+                src='assets/images/sp3.png'
                 alt=''
                 width='120px'
                 height='120px'
@@ -108,22 +108,7 @@ const Home = () => {
             <div className='Special-Item m-2 text-center'>
               <img
                 className='rounded-circle'
-                src='assets/images/sp.png'
-                alt=''
-                width='120px'
-                height='120px'
-              />
-              <p className='Special-Item m-2-Name text-primary font-weight-bold mt-2'>
-                Ginger Cake
-              </p>
-              <p className='Special-Item m-2-Price text-white font-weight-bold mt-1'>
-                N23,800
-              </p>
-            </div>
-            <div className='Special-Item m-2 text-center'>
-              <img
-                className='rounded-circle'
-                src='assets/images/sp.png'
+                src='assets/images/sp2.png'
                 alt=''
                 width='120px'
                 height='120px'
